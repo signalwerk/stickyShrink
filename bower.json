@@ -1,0 +1,19 @@
+{
+    "name": "stickyShrink",
+    "description": "A jQuery plugin that adds classes according to the scroll position and scroll direction.",
+    "license": "BSD",
+    "main": ["/stickyShrink.js"],
+    "keywords": [
+        "stickyShrink",
+        "jQuery",
+        "jquery-plugin"
+    ],
+    "dependencies": {
+        "jquery": ">=1.6"
+    },
+    "ignore": [
+        "*",
+        "!/bower.json",
+        "!/stickyShrink.js"
+    ]
+}
