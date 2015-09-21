@@ -9,7 +9,7 @@
 ```
 
 ###Options
-`shrinkStart` the scroll position wher the srink gets active.
+`shrinkStart` the scroll position where the shrink gets activated.
 
 ###Class combinations
 
@@ -20,4 +20,4 @@
 `.stickyShrink.active.up` = Scroll up and the scroll position (`shrinkStart`) is passed. 
 
 ####Notes
-Inspired: https://github.com/codrops/AnimatedHeader but with jQuery dependency
+Inspired by https://github.com/codrops/AnimatedHeader but with jQuery dependency and some more functions.
