@@ -1,4 +1,7 @@
 ## stickyShrink
+Inspired by https://github.com/codrops/AnimatedHeader but with jQuery dependency and some more functions.
+
+
 ###Usage
 
 ```
@@ -19,5 +22,3 @@
 `.stickyShrink.inactive.up` = Scroll up and the scroll position (`shrinkStart`) is not passed. 
 `.stickyShrink.active.up` = Scroll up and the scroll position (`shrinkStart`) is passed. 
 
-####Notes
-Inspired by https://github.com/codrops/AnimatedHeader but with jQuery dependency and some more functions.
