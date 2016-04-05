@@ -12,7 +12,7 @@ Inspired by https://github.com/codrops/AnimatedHeader but with jQuery dependency
 ```
 
 ###Options
-`shrinkStart` the scroll position where the shrink gets activated.
+`shrinkStart` the scroll position where the shrink gets activated in px.
 
 ###Class combinations
 
