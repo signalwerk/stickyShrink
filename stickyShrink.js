@@ -11,19 +11,20 @@
   $.fn.stickyShrink = function (options) {
 
     var settings = $.extend({
-      'shrinkStart': 0
+      'shrinkStart': 0,
+      'parent': $(window)
     }, options);
 
 
     var scrollPage = function () {
-      var scrollTop = $(thiz).scrollTop();
+      var scrollTop = settings.parent.scrollTop();
 
       if (scrollTop > lastScrollTop) {
         direction = 'down';
       } else if (scrollTop < lastScrollTop) {
         direction = 'up';
         // if browser bounces at the end of the window it shouldn't get an up direction
-        if ($(thiz.window).scrollTop() + $(thiz.window).height() >= $(thiz.document).height()) {
+        if ($(window).scrollTop() + $(window).height() >= $(document).height()) {
           direction = 'none';
         }
       }
@@ -59,10 +60,18 @@
     // adding .stickyShrink to element
     $(this).addClass('stickyShrink');
 
-    $(window).on('scroll resize orientationChanged', function () {
+    $(window).on('resize orientationChanged', function () {
       if (!didScroll) {
         didScroll = true;
-        setTimeout(scrollPage, 100);
+        setTimeout(scrollPage, 40);
+      }
+    }); // check for changes
+
+    settings.parent.on('scroll', function () {
+      console.log('scroll');
+      if (!didScroll) {
+        didScroll = true;
+        setTimeout(scrollPage, 40);
       }
     }); // check for changes
 
