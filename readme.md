@@ -14,7 +14,7 @@ Inspired by https://github.com/codrops/AnimatedHeader but with jQuery dependency
 
 ###Options
 `shrinkStart` the scroll position where the shrink gets activated in px.
-`parent` the element to check scroll position in. default is $(window)
+`parent` the element to check scroll position in. default is `$(window)`
 
 ###Class combinations
 
