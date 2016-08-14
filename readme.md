@@ -6,13 +6,15 @@ Inspired by https://github.com/codrops/AnimatedHeader but with jQuery dependency
 
 ```
   $('#nav').stickyShrink({
-    'shrinkStart' : 105
+    'shrinkStart' : 105,
+    'parent': $('.container') // default: $(window)
   });
 
 ```
 
 ###Options
 `shrinkStart` the scroll position where the shrink gets activated in px.
+`parent` the element to check scroll position in. default is $(window)
 
 ###Class combinations
 
